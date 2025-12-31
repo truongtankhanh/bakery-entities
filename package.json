@@ -1,0 +1,32 @@
+{
+  "name": "@bakery/bakery-entities",
+  "version": "1.0.0",
+  "description": "Shared TypeORM entities for Bakery backend services",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "gts clean",
+    "prepare": "npm run compile",
+    "lint": "gts lint",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "gts": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
