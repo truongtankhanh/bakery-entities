@@ -1,0 +1,26 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "baseUrl": ".",
+		"noImplicitAny": false,
+		"removeComments": true,
+		"noLib": false,
+		"allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+    "target": "es6",
+		"sourceMap": true,
+    "allowJs": false,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+		"node_modules"
+	]
+}
